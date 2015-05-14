@@ -26,6 +26,6 @@ gulp.task( 'webserver', function() {
   console.log( 'Server listen on port 9001' );
 });
 
-gulp.task( 'default', function() {
+gulp.task( 'default', [ 'webserver' ], function() {
   gulp.watch( allFiles, [ 'test' ] );
 });
