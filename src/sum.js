@@ -1,7 +1,3 @@
 'use strict';
 
-function sum( x, y ) {
-  return x + y;
-}
-
-exports = module.exports = sum;
+module.exports = (x, y) => x + y;
