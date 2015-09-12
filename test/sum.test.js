@@ -1,9 +1,9 @@
 'use strict';
-require( 'should' );
-var sum = require( '../src/sum' );
+import { expect } from 'chai';
+import sum from '../src/sum';
 
-describe( '#SUM', function() {
-  it( 'Should sum two numbers', function() {
-    sum( 1, 2 ).should.be.equal( 3 );
+describe('#SUM', () => {
+  it('Should sum two numbers', () => {
+    expect(sum(1, 2)).to.be.equal(3);
   });
 });
